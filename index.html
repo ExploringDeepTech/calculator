@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Two-Number Calculator!</title>
+	<style>
+	input{
+		text-align: center;
+	}
+
+	</style>
+	<script type="text/javascript">
+		// Adds the two numbers
+		function addNum(n1,n2){
+
+			var no1 = parseFloat(n1)
+			var no2 = parseFloat(n2)
+			var no3 = no1 + no2
+			calculatorform.btn3.value = no3;
+		}
+		// Subtracts second number from first number
+		function subtractNum(n1, n2){
+			var no1 = parseFloat(n1)
+			var no2 = parseFloat(n2)
+			var no3 = no1 - no2
+			calculatorform.btn3.value = no3;
+		}
+		// Multiplies the two numbers
+		function multiplyNum(n1, n2){
+			var no1 = parseFloat(n1)
+			var no2 = parseFloat(n2)
+			var no3 = no1 * no2
+			calculatorform.btn3.value = no3;
+		}
+		// Divides the first number by the second number
+		function divideNum(n1, n2){
+			var no1 = parseFloat(n1)
+			var no2 = parseFloat(n2)
+			var no3 = no1 / no2
+			calculatorform.btn3.value = no3;
+		}	
+		
+	</script>
+</head>
+<body style="background-color: black;">
+	<h1 style="font-family:courier; color:#F5B7B1;"><b>Simple Calculator in HTML/CSS/JavaScript</b></h1>
+	<hr>
+	<p style="color:#F5B7B1;"><i>This application will add/subtract/multiply/divide two input values.</i></p>
+	<form name = calculatorform>
+		<!--Allows user to input two numbers to compute a function -->
+		<p style="color:#F5B7B1;">Value 1: </p><input type="text" name="btn1"><br>
+		<p style="color:#F5B7B1;">Value 2: </p><input type="text" name="btn2"><br>
+		<p style="color:#F5B7B1;">Answer: </p><input type="text" name="btn3"><br><br>
+		<input type="button" value="Add" onclick="addNum(btn1.value,btn2.value)">
+		<input type="button" value="Subtract" onclick="subtractNum(btn1.value,btn2.value)">
+		<input type="button" value="Multiply" onclick="multiplyNum(btn1.value,btn2.value)">
+		<input type="button" value="Divide" onclick="divideNum(btn1.value,btn2.value)">
+		<input type="reset"> 
+
+		<!--Need to make a dropdown list for the buttons instead of just buttons...-->
+</body>
+</html>
